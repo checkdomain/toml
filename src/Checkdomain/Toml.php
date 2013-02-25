@@ -22,7 +22,18 @@
 namespace Checkdomain;
 
 /**
- * TOML PHP Parser
+ * Checkdomain TOML PHP Parser
+ * 
+ * This class parses a TOML file. To access the values there are two
+ * possibilities:
+ * 
+ *     $toml = new \Checkdomain\Toml('/path/to/toml/file.toml');
+ *     
+ *     // Path accessor
+ *     $toml->get('database.server');
+ *     
+ *     // Array accessor
+ *     $toml->values['database']['server'];
  * 
  * @author @benjaminpaap (https://twitter.com/benjaminpaap)
  * @organization Checkdomain GmbH (https://www.checkdomain.de)
@@ -30,7 +41,7 @@ namespace Checkdomain;
 class Toml
 {
 	
-	protected $values = array();
+	public $values = array();
 	
 	/**
 	 * Constructor

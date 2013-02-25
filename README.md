@@ -6,7 +6,7 @@ Checkdomain TOML Parser is a parser for [TOML](https://github.com/mojombo/toml) 
 Installation
 ====
 PHP TOML Parser is available via Composer or direct download from github.com. You can
-find some package infos at packagist.com.
+find some package infos at [packagist.org](https://packagist.org/packages/checkdomain/php-toml).
 
 Composer
 ----

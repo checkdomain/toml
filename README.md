@@ -1,4 +1,4 @@
-Checkdomain TOML Parser
+Checkdomain TOML Parser [![Build Status](https://travis-ci.org/checkdomain/toml.png?branch=master)](https://travis-ci.org/checkdomain/toml)
 ====
 
 Checkdomain TOML Parser is a parser for [TOML](https://github.com/mojombo/toml) files.

@@ -214,7 +214,6 @@ class Toml
 		$inArray = false;
 		$group   = '';
 		$current = '';
-		$arrayStartLine = null;
 		
 		// Iterate over all lines
 		$lines = explode(PHP_EOL, $s);
@@ -235,7 +234,6 @@ class Toml
 				$current .= $line;
 				// It's possible to span arrays over more than one line
 				if (preg_match('[^.+=\s*\[]', $line) && !preg_match('[\]$]', $line)) {
-					$arrayStartLine = $linenum;
 					$inArray = true;
 					continue;
 				}

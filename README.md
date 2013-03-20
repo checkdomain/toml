@@ -13,10 +13,10 @@ Composer
 Get [Composer](http://getcomposer.org/) and add the following to your **composer.json**:
     
 ````json
-    "require": {
-    	// ...
-        "checkdomain/php-toml": "*"
-    }
+"require": {
+    // ...
+    "checkdomain/php-toml": "*"
+}
 ````
     
 Download

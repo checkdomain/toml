@@ -12,10 +12,12 @@ Composer
 ----
 Get [Composer](http://getcomposer.org/) and add the following to your **composer.json**:
     
+````json
     "require": {
     	// ...
         "checkdomain/php-toml": "*"
     }
+````
     
 Download
 ----
@@ -27,23 +29,28 @@ Usage
 ====
 Once installed Checkdomain TOML Parser is easy to use:
 
-    <?php
-    $toml = new \Checkdomain\Toml('/path/to/toml/file.toml');
+````php
+<?php
+
+$toml = new \Checkdomain\Toml('/path/to/toml/file.toml');
     
-    // Path accessor
-	$toml->get('database.server');
+// Path accessor
+$toml->get('database.server');
 	
-	// Array accessor
-	$toml->values['database']['server']
-	
+// Array accessor
+$toml->values['database']['server']
+````	
 You can also use the instance multiple times by calling the `parse` method:
 
-    <?php
-    $toml = new \Checkdomain\Toml;
-    $result = $toml->parse('/path/to/toml/file.toml');
+````php
+<?php
+
+$toml = new \Checkdomain\Toml;
+$result = $toml->parse('/path/to/toml/file.toml');
     
-    // You can access the returned array like this
-    $result['database']['server'];	
+// You can access the returned array like this
+$result['database']['server'];	
+````
 
 Contributions
 ====
